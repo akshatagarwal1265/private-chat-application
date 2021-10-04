@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chat_selection_menu_profile_settings"
+        android:title="Profile Settings" />
+    <item
+        android:id="@+id/chat_selection_menu_logout"
+        android:title="Log Out" />
+</menu>

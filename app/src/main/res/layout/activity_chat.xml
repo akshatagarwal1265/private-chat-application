@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akshatagarwal1265.test1.ChatActivity"
+    android:background="@drawable/default_wallpaper">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/linearLayout">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_left_chat_toolbar">
+
+            <ImageView
+                android:id="@+id/chat_add_btn"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="bottom"
+                android:padding="12dp"
+                android:alpha="0.5"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_add_black_24dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="46dp"
+            android:layout_weight="1"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="#FFFFFF">
+
+            <EditText
+                android:id="@+id/chat_message_view"
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:hint="Type a message"
+                android:textColorHint="#33000000"
+                android:maxLength="16384"
+                android:maxLines="6" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_right_chat_toolbar">
+
+            <ImageView
+                android:id="@+id/chat_camera_btn"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="bottom"
+                android:alpha="0.5"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="12dp"
+                android:src="@drawable/ic_photo_camera_black_24dp" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="46dp"
+            android:layout_gravity="bottom"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/background_chat_toolbar">
+
+            <ImageView
+                android:id="@+id/chat_send_btn"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="12dp"
+                android:src="@drawable/ic_send_white_24dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

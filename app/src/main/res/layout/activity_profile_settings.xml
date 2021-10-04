@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.akshatagarwal1265.test1.ProfileSettingsActivity"
+    android:background="@drawable/default_wallpaper">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_settings_image"
+            android:layout_width="225dp"
+            android:layout_height="225dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_avatar"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/profile_settings_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_settings_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Display Name"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/profile_settings_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_settings_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Hi There, I am using UnM"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/profile_settings_change_name_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/profile_settings_change_status_btn"
+            android:layout_alignStart="@+id/profile_settings_change_status_btn"
+            android:layout_below="@+id/profile_settings_status"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Change Name"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/profile_settings_change_status_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_settings_change_name_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Change Status"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/profile_settings_change_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/profile_settings_change_status_btn"
+            android:layout_alignStart="@+id/profile_settings_change_status_btn"
+            android:layout_below="@+id/profile_settings_change_status_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Change Image"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</ScrollView>

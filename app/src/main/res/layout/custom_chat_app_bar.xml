@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="4dp"
+    android:layout_marginEnd="4dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_app_bar_image"
+        android:src="@drawable/default_avatar"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:padding="2dp"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/custom_app_bar_image"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/custom_app_bar_image_self"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/custom_app_bar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/custom_app_bar_last_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Seen"
+            android:visibility="gone"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_app_bar_image_self"
+        android:src="@drawable/default_avatar"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:padding="2dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
